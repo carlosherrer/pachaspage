@@ -1,0 +1,92 @@
+<div class="bg-[#fee5ca]">
+    <div class="relative bg-black">
+        <div class="parallax" style="background-image: url('Mariachis.JPG');">
+            <div class="image-overlay"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white gap-4">
+                <p class="text-8xl font-bold hover:text-red-600 tracking-tighter">PACHAS PARRILLAS</p>
+                <p class="text-4xl font-semibold tracking-widest">EL SABOR DE GENERACIONES</p>
+                <div class="bg-[#ae9a64] hover:bg-[#323232] text-white hover:text-[#ae9a64] inline-block px-14 py-2 rounded-md">
+                    <p routerLink="/carta" class="text-3xl font-bold tracking-wider cursor-pointer">Carta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative bg-black">
+        <div class="parallax2" style="background-image: url('comida-restaurante.jpg');">
+            <div class="image-overlay2"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white gap-4">
+                <p class="text-6xl font-bold tracking-widest text-[#ae9a64]">EL RESTAURANTE</p>
+                <div class="flex justify-around w-full mt-10 text-center px-12">
+                    <div class="grid gap-8 w-11/12">
+                        <p class="font-bold text-2xl">01</p>
+                        <div class="gap-8 grid text-[#ae9a64]">
+                            <p class="font-bold text-3xl">TRADICIONAL PARRILLA, CON UN TOQUE MODERNO</p>
+                            <P class="px-10">Respetamos las raíces de la parrilla tradicional, combinando lo mejor de lo auténtico con un toque de innovación moderna. Cada plato está diseñado para ofrecer una experiencia inolvidable. </P>
+                        </div>
+                    </div>
+                    <div class="grid gap-8 w-11/12">
+                        <p class="font-bold text-2xl">02</p>
+                        <div class="gap-8 grid text-[#ae9a64]">
+                            <p class="font-bold text-3xl">LO MEJOR EN PARRILLA A LA LEÑA</p>
+                            <P class="px-6">Cada corte de carne es cuidadosamente preparado sobre brasas de leña seleccionada, aportando un sabor ahumado inigualable. La combinación perfecta de fuego y tradición, donde la calidad de nuestros ingredientes se realza con el aroma y el calor de las llamas.</P>
+                        </div>
+                    </div>
+                    <div class="grid gap-8 w-11/12">
+                        <p class="font-bold text-2xl">03</p>
+                        <div class="gap-8 grid text-[#ae9a64]">
+                            <p class="font-bold text-3xl">SITUADO DONDE COMENZÓ TODO</p>
+                            <P class="px-6">En este lugar se forjaron nuestras primeras brasas y nació nuestra pasión por la parrilla. Cada rincón cuenta una historia, y cada plato honra el legado que hemos construido con esfuerzo y dedicación. Aquí, donde comenzó todo.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex gap-10 justify-center py-12 z-0">
+        <div class="img-container relative rounded-lg">
+            <img src="delivery.jpg" alt="delivery" class="hover-img">
+            <div class="overlay-text absolute inset-0 flex items-center justify-start">
+                <div>
+                    <p class="text-white text-2xl font-bold text-shadow px-6">Delivery</p>
+                    <div class="flex px-6 py-2 bg-red-700 rounded-r-lg">
+                        <p class="text-white text-sm">Para disfrutar desde el hogar</p>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="img-container relative rounded-lg">
+            <img src="recojo-tienda.jpg" alt="recojo en tienda" class="hover-img">
+            <div class="overlay-text absolute inset-0 flex items-center justify-start">
+                <div>
+                    <p class="text-white text-2xl font-bold text-shadow px-6">Recojo en Tienda</p>
+                    <div class="flex px-6 py-2 bg-red-700 rounded-r-lg">
+                        <p class="text-white text-sm">Listo para recojer</p>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="img-container relative rounded-lg">
+            <img src="festividades.jpg" alt="festividades" class="hover-img">
+            <div class="overlay-text absolute inset-0 flex items-center justify-start">
+                <div>
+                    <p class="text-white text-2xl font-bold text-shadow px-6">Festividades</p>
+                    <div class="flex px-6 py-2 bg-red-700 rounded-r-lg">
+                        <p class="text-white text-sm">Celebra con nosotros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-container relative rounded-lg">
+            <img src="reservas.jpg" alt="reservas" class="hover-img">
+            <div class="overlay-text absolute inset-0 flex items-center justify-start">
+                <div>
+                    <p class="text-white text-2xl font-bold text-shadow px-6">Reservas</p>
+                    <div class="flex px-6 py-2 bg-red-700 rounded-r-lg">
+                        <p class="text-white text-sm">Reserva con anticipacion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <app-ubication [showMap]="showMap" (toggle)="toggleMap()" class="fixed bottom-10 right-5 z-50"></app-ubication>
+</div>
